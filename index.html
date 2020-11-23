@@ -75,11 +75,16 @@
           $("p").show();
         });
       }
-      function signUp(){
-        var User=document.getElementById("txt_user")
-        var Pass=document.getElementById("txt_pass")
-        if(User!=null)
-        alert("Bạn chưa nhập user!")
+       var User = document.getElementById("txt_user")
+        var Pass = document.getElementById("txt_pass")
+      function signUp() {
+       
+        if (User ==null) {
+          alert("Bạn chưa nhập user!")
+        }
+        else {
+         alert("User") 
+        }
       }
     </script>
     <hr>
