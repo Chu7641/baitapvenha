@@ -75,31 +75,29 @@
           $("p").show();
         });
       }
-       var User = document.getElementById("txt_user")
-        var Pass = document.getElementById("txt_pass")
-      function signUp() {
-       
-        if (User ==null) {
-          alert("Bạn chưa nhập user!")
-        }
-        else {
-         alert("User") 
-        }
+      function onMouseOver() {
+        var color = document.getElementById("lbl_color")
+        color.style.color = "blue";
       }
-    </script>
-    <hr>
-    <div>
-      <label for="">User</label>
-      <input id="txt_user" type="text">
-      <br>
-      <label for="">Password</label>
-      <input id="txt_pass" type="password">
-    </div>
-    <div>
-      <button onclick="signUp()" type="button" class="btn btn-outline-primary">Sign in</button>
-      <button type="button" class="btn btn-outline-primary">Clear</button>
-    </div>
+      function onMouseOut() {
+        var color = document.getElementById("lbl_color")
+        color.style.color = "black";
+      }
+      function imgHide(){
+        var imgTra=document.getElementById("img_natra")
+        imgTra.style.visibility = 'hidden'; 
+      }
+      function imgUnHide(){
+        var imgTra=document.getElementById("img_natra")
+        imgTra.style.visibility = 'visible'; 
+      }
 
+
+    </script> 
+    <hr>
+    <label id="lbl_color" onmouseout="onMouseOut()" onmouseover="onMouseOver()" for="">Test on mouse</label>
+    <img onmouseover="imgHide()" onmouseout="imgUnHide()" id="img_natra" src="img/1.jpg" alt="natra">
+    </div>
   </div>
 </body>
 
