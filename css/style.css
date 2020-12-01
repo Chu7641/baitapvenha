@@ -1,7 +1,16 @@
-  .container{
-      max-width: 650px;
-      padding-top: 5rem;
-  }  
-.show{
-    margin-left: 10rem;
+body{
+  margin-top: 2rem;
+  /* text-align: center; */
+}
+.form{
+  text-align: center;
+}
+.note{
+  margin-top: 3rem;
+  margin-left: 20%;
+  font-size: large;
+  font-style: oblique;
+}
+.list{
+  margin-left: 22%;
 }

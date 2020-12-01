@@ -15,14 +15,19 @@
   <script src="js/popper.min.js"></script>
   <script src="js/script.js"></script>
   <div class="container">
-    <p>Cho a= 100+200 và mảng A[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] Hiển thị a và mảng A, loại bỏ phần tử thứ 7 trong mảng và
-      nhân 3 các phần tử trong mảng, hiển thị mảng mới</p>
-    <div class="show"> 
-      <button onclick="hienThiA()">Hiển thị a</button>
-      <button onclick="hienThiMang().soChan">Hiển thị mảng</button>
-      <button onclick="hienThiMangMoi()">Hiển thị mảng mới</button>
+    <div class="form">
+      <p>Nhập vào lựa chọn của bạn!</p>
+      <input onkeyup="doiMau()" type="text" id="web_txt">
+      <button onclick="chuyenTiep()">Đi tới</button>
     </div>
-  </div>
+    <br>
+    <div>
+      <p class="note">Ghi chú:</p>
+      <p id="web1" class="list"> 1: Quản trị mạng chấm cơm</p>
+      <p id="web2" class="list"> 2: Download chấm cơm</p>
+      <p id="web3" class="list"> 3: Vn đốc chấm cơm</p>
+      <p id="web4" class="list"> Còn lại: Mê ta chấm vn</p>
+    </div>
 </body>
 
 </html>
