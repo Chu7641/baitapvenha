@@ -1,21 +1,9 @@
-tinhTong = () => {
-    let mang = [1,3,5,7,9];
-    //phanTu = document.getElementById('mang').value;
-   // mang.push(phanTu);
-     console.log(mang);
-    let sum = 0;
-    mang.forEach(e => {
-        sum += e;
-    });
-    alert("Tổng các phần tử trong mảng là: "+ sum)
-}
-testDom=()=>{
-    let hello=document.getElementById('hello_txt');
-    hello.outerHTML=('<h2 id="hello_txt" style="color: red;">Hello2</h2>')
-    
-}
-testBack=()=>{
-    let hello=document.getElementById('hello_txt');
-    hello.outerHTML=('<h1 id="hello_txt">Hello</h1>')
-    
+Book = () => {
+    let startDate = document.getElementById('startDate').value;
+    let endDate = document.getElementById('endDate').value;
+    let a = moment(startDate).format('YYYY/MM/DD')
+    let b = moment(startDate).add(5, 'days').calendar();
+    let Note = document.getElementById('note').value
+    // moment(a).format('YYYY/MM/DD')
+    alert('Start day: ' + a + ' End day: ' + b +' Note: '+Note);
 }
