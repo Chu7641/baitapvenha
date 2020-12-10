@@ -10,99 +10,22 @@
 </head>
 
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/axios.min.js"></script>
   <script src="js/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/script.js"></script>
-
-
   <div class="container">
-    <input type="date" name="" id="">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Mon</th>
-          <th>Tue</th>
-          <th>Web</th>
-          <th>Thu</th>
-          <th>Fri</th>
-        </tr>
-      </thead>
-      <tbody id="tbody" data-toggle="modal" data-target="#exampleModal">
-        <tr>
-          <td scope="row">30</td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td scope="row">7</td>
-          <td>8</td>
-          <td>9</td>
-          <td>10</td>
-          <td>11</td>
-        </tr>
-        <tr>
-          <td scope="row">14</td>
-          <td>15</td>
-          <td>16</td>
-          <td>17</td>
-          <td>18</td>
-        </tr>
-        <tr>
-          <td scope="row">21</td>
-          <td>22</td>
-          <td>23</td>
-          <td>24</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td scope="row">28</td>
-          <td>29</td>
-          <td>30</td>
-          <td>31</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td scope="row"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Meeting room...</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div>
-              <label for="">Start Date</label>
-              <input id="startDate" type="date">
-              <br>  
-              <label for="">End Date</label>
-              <input id="endDate" type="date">
-              <br>
-              <label for="">Note</label>
-              <input type="text" name="" id="note">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button onclick="Book()" type="button" class="btn btn-primary">Book</button>
-
-          </div>
-        </div>
-      </div>
+    <button onclick="showData()">Show</button>
+    <label id="listData" for=""></label>
+    <hr>
+    <div>
+      <label for="">Name</label>
+      <input type="text" name="" id="name_txt"><br>
+      <label for="">Price</label>
+      <input type="number" name="" id="price_txt"><br>
+      <button onclick="addData()">ADD</button>
     </div>
   </div>
 
